@@ -1,0 +1,40 @@
+var a, b, c, d, e, sum;
+
+procedure p;
+    procedure q;
+        var o;
+        procedure f;
+        begin
+            e := 88;
+            write(e);
+        end;
+    begin
+        d := 1;
+        write(d);
+        call f;
+    end;
+
+    procedure r;
+    begin
+        sum := 0;
+        while sum < 1000 do
+            sum := sum + 1;
+        write(sum);
+    end;
+
+    procedure m;
+    begin
+        write(666);
+    end;
+
+begin
+    call r;
+    call q;
+    call m;
+end;
+
+begin
+    call p;
+end.
+
+

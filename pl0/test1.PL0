@@ -1,0 +1,29 @@
+var a, b, c, d, e, sum;
+
+procedure p;
+    procedure q;
+    begin
+        while b < 100 do
+            b := b + 1;
+        write(b);
+
+        c := 1;
+        e := 1 + c;
+        write(e);
+    end;
+
+begin
+    call q;
+end;
+
+begin
+
+    b := 0;
+    while b < 10 do
+        sum := sum + b;
+
+
+    call p;
+end.
+
+

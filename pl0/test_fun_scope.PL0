@@ -1,0 +1,29 @@
+var a, b, c, d, e, sum;
+
+procedure p;
+    procedure q;
+        procedure f;
+        begin
+            e := 88;
+            write(e);
+        end;
+    begin
+        d := 1111;
+        write(d);
+    end;
+
+    procedure r;
+    begin
+        call f;
+    end;
+
+begin
+    call r;
+    call q;
+end;
+
+begin
+    call p;
+end.
+
+
